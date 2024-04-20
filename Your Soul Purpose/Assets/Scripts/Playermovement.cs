@@ -13,6 +13,8 @@ public class Playermovement : MonoBehaviour
 
     Vector2 movement;
 
+    public Transform characterSprite;
+
     // Update is called once per frame
     void Update()
     {
@@ -25,11 +27,11 @@ public class Playermovement : MonoBehaviour
 
         if (movement.x < -0.01f)
         {
-            transform.localRotation = Quaternion.Euler(0, 180, 0);
+            characterSprite.localRotation = Quaternion.Euler(0, 180, 0);
         }
         else if (movement.x > 0.01f)
         {
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
+            characterSprite.localRotation = Quaternion.Euler(0, 0, 0);
         }
         else
         {
