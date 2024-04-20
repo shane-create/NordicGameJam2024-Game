@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Player2
+  - TeleportTrigger
+  - wall
+  - Danger
   layers:
   - Default
   - TransparentFX

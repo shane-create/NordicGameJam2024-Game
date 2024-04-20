@@ -28,7 +28,7 @@
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.velocity = shootingDirection * bulletSpeed;
-
+        
             Destroy(bullet, 5f);  // 在此处添加代码以在5秒后销毁子弹   
             Debug.Log("Shooting direction: " + shootingDirection);  // 输出射击方向，帮助调试
         }

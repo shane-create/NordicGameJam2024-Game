@@ -21,6 +21,10 @@ public class Projectile : MonoBehaviour
             // 应用旋转
             transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
         }
+        else if (collision.gameObject.tag == "wall")
+        {
+            Destroy(gameObject);  // 销毁子弹 GameObject
+        }
 
     }
 }
