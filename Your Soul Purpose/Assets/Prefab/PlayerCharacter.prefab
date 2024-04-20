@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6835355909735845657}
   - component: {fileID: 6835355909735845636}
   - component: {fileID: 6835355909735845637}
+  - component: {fileID: 8521188207313348684}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -151,3 +152,29 @@ MonoBehaviour:
   firePoint: {fileID: 6835355909735845638}
   bulletPrefab: {fileID: 5443260507424639034, guid: 3bbceba0acb7396468374a5f21590125, type: 3}
   bulletSpeed: 20
+--- !u!61 &8521188207313348684
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6835355909735845658}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.11733484, y: 0.008691549}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3307562, y: 1.1134691}
+  m_EdgeRadius: 0
