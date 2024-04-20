@@ -25,18 +25,25 @@ public class Playermovement : MonoBehaviour
 
         if (movement.x < -0.01f)
         {
-            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
         else if (movement.x > 0.01f)
         {
-            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         else
         {
             anim.SetBool("walk", false);
         }
 
-    }
+        bool movingNorth = movement.y > 0.01f;
+        anim.SetBool("walk_N", movingNorth);
+
+        bool movingSouth = movement.y < -0.01f;
+        anim.SetBool("walk_S", movingSouth);
+
+
+}
 
     private void FixedUpdate()
     {
