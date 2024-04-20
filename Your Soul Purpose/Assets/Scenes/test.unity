@@ -506,6 +506,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &324467281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6835355909735845658, guid: 370009c16a8bcb4429c9b4e110a91729, type: 3}
+  m_PrefabInstance: {fileID: 6835355909955320855}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &324467289
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324467281}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3979524f8177464478231af5ad2d28e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &454659550
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,6 +2318,10 @@ PrefabInstance:
       propertyPath: m_LinearDrag
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 6835355909735845657, guid: 370009c16a8bcb4429c9b4e110a91729, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 324467289}
     - target: {fileID: 6835355909735845658, guid: 370009c16a8bcb4429c9b4e110a91729, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
