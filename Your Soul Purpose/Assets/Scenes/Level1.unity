@@ -474,6 +474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f68443df96022e4f8b04bde3fcb38b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayBeforeReset: 2
 --- !u!1 &988436621
 GameObject:
   m_ObjectHideFlags: 0
@@ -2867,6 +2868,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2789320510330250249, guid: c1ce15a18c060c14db508d3f1d2e014b, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2789320510330250251, guid: c1ce15a18c060c14db508d3f1d2e014b, type: 3}
       propertyPath: m_RootOrder
       value: 1
