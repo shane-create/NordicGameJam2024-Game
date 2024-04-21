@@ -4994,3 +4994,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1ce15a18c060c14db508d3f1d2e014b, type: 3}
+--- !u!1001 &53135053576920503
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2740843023477645368, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740843023477645368, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740843023477645368, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.504
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740843023477645368, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740843023477645368, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740843023477645368, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740843023477645368, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740843023477645368, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740843023477645368, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740843023477645368, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740843023477645368, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740843023477645373, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
+      propertyPath: m_Name
+      value: Reflective Surface Small
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c39f35d6aa93d5489fc10f88395c61f, type: 3}
