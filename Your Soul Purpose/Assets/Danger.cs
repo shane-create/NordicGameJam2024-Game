@@ -6,12 +6,18 @@ public class Danger : MonoBehaviour
     public float delayBeforeReset = 2.0f;
     private Playermovement playerMovement;
     private Shooter shoot;
+    public AudioSource audioSource;  
+    public AudioClip deathSound;     
     void Start()
     {
         // ±£¥Ê≥ı ºŒª÷√
         startPosition = transform.position;
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<Playermovement>();
         shoot = GameObject.FindGameObjectWithTag("Player").GetComponent<Shooter>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -26,6 +32,7 @@ public class Danger : MonoBehaviour
     IEnumerator HandleDeathAndRespawn()
     {
         Debug.Log("Player has died.");
+        audioSource.PlayOneShot(deathSound);
         if (playerMovement != null && shoot != null)
         {
             playerMovement.enabled = false;
