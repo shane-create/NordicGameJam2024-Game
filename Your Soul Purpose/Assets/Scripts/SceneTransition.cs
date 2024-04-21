@@ -8,6 +8,6 @@ public class SceneTransition : MonoBehaviour
     private void OnEnable()
     {
         //Only specifying the sceneName or sceneBuildIndex will load the Scene with the Single Mode
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("Level1", LoadSceneMode.Single);
     }
 }
