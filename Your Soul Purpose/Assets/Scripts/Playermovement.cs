@@ -90,21 +90,21 @@ void Update()
     }
 
 
-    void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("MovingPlatform"))
         {
-            this.transform.parent = other.transform;  // 玩家成为平台的子对象
+            Debug.Log("GG");
             dangerCollider.enabled = false;
         }
     }
 
-    void OnCollisionExit2D(Collision2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("MovingPlatform"))
         {
-            this.transform.parent = null;  // 解除父子关系
-            dangerCollider.enabled = true;
+            Debug.Log("GGGG");
+            dangerCollider.enabled = false;
 
         }
     }
