@@ -9,6 +9,7 @@ TagManager:
   - wall
   - Danger
   - MovingPlatform
+  - PlatformTrigger
   layers:
   - Default
   - TransparentFX
