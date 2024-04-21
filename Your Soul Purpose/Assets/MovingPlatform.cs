@@ -7,7 +7,7 @@ public class MovingPlatform : MonoBehaviour
     public float speed = 2.0f;  // 移动速度
 
     private Vector3 nextPosition;  // 下一个移动目标位置
-    private bool isActive = false;
+    private bool isActive = true;
 
     void Start()
     {
