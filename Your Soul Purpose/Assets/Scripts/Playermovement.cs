@@ -6,9 +6,7 @@ public class Playermovement : MonoBehaviour
 {
 
 
-    private Danger dangerComponent;
-    private Collider2D dangerCollider;
-
+    
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     Vector2 movement;
@@ -16,26 +14,30 @@ public class Playermovement : MonoBehaviour
     public Transform characterSprite;
     public Animator anim;
 
-
+    private List<Collider2D> dangerColliders = new List<Collider2D>();
 
 
 
     private void Start()
     {
-        GameObject dangerObject = GameObject.FindGameObjectWithTag("Danger"); // 确保您已经给带有 Danger 组件的 GameObject 设置了正确的 Tag
-        if (dangerObject != null)
+        // 找到所有带有 "Danger" 标签的 GameObjects 并获取它们的 Collider2D
+        GameObject[] dangerObjects = GameObject.FindGameObjectsWithTag("Danger");
+        foreach (GameObject obj in dangerObjects)
         {
-            dangerComponent = dangerObject.GetComponent<Danger>();
-            dangerCollider = dangerObject.GetComponent<Collider2D>();
+            Collider2D collider = obj.GetComponent<Collider2D>();
+            if (collider != null)
+            {
+                dangerColliders.Add(collider);
+            }
         }
     }
-   
-    
-    
-    
-    
+
+
+
+
+
     // Update is called once per frame
-void Update()
+    void Update()
     {
         //Input
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -95,7 +97,7 @@ void Update()
         if (other.gameObject.CompareTag("MovingPlatform"))
         {
             Debug.Log("GG");
-            dangerCollider.enabled = false;
+            SetDangerCollidersEnabled(false);
         }
     }
 
@@ -104,11 +106,17 @@ void Update()
         if (other.gameObject.CompareTag("MovingPlatform"))
         {
             Debug.Log("GGGG");
-            dangerCollider.enabled = false;
+            SetDangerCollidersEnabled(true);
 
         }
     }
-
+    private void SetDangerCollidersEnabled(bool enabled)
+    {
+        foreach (Collider2D collider in dangerColliders)
+        {
+            collider.enabled = enabled;
+        }
+    }
 }
 
 
