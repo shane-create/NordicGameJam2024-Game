@@ -1524,6 +1524,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 8521188207313348684, guid: 370009c16a8bcb4429c9b4e110a91729, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8446361
+      objectReference: {fileID: 0}
+    - target: {fileID: 8521188207313348684, guid: 370009c16a8bcb4429c9b4e110a91729, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.074365914
+      objectReference: {fileID: 0}
     - target: {fileID: 8711235525641309467, guid: 370009c16a8bcb4429c9b4e110a91729, type: 3}
       propertyPath: m_Enabled
       value: 1
