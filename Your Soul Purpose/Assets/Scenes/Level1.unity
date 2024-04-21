@@ -1656,6 +1656,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8711235525641309467, guid: 370009c16a8bcb4429c9b4e110a91729, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 64692d770438f144e8715d541348b8aa, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 370009c16a8bcb4429c9b4e110a91729, type: 3}
 --- !u!1 &949177653
